@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>BR FARM - Pertanian Digital Modern</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: 'Poppins', sans-serif;
+    }
+    body {
+      background-color: #ffffff;
+      color: #1e4620;
+      overflow-x: hidden;
+    }
+    header {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 20px 8%;
+      background: #e8f5e9;
+      box-shadow: 0 2px 10px rgba(0,0,0,0.05);
+      position: sticky;
+      top: 0;
+      z-index: 10;
+    }
+    header img { height: 50px; }
+    nav a {
+      color: #2e7d32;
+      text-decoration: none;
+      margin-left: 25px;
+      font-weight: 500;
+      transition: color 0.3s;
+    }
+    nav a:hover { color: #1b5e20; }
+    .hero {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      flex-wrap: wrap;
+      padding: 80px 8%;
+      background: linear-gradient(135deg, #f1f8f4 0%, #ffffff 100%);
+    }
+    .hero-text {
+      flex: 1;
+      min-width: 300px;
+    }
+    .hero-text h1 {
+      font-size: 48px;
+      color: #2e7d32;
+      margin-bottom: 20px;
+    }
+    .hero-text p {
+      font-size: 18px;
+      line-height: 1.6;
+      color: #3b573b;
+      margin-bottom: 30px;
+    }
+    .hero-text a {
+      background: #2e7d32;
+      color: white;
+      padding: 14px 30px;
+      border-radius: 50px;
+      text-decoration: none;
+      font-weight: 600;
+      transition: background 0.3s ease;
+    }
+    .hero-text a:hover { background: #1b5e20; }
+    .hero img {
+      width: 450px;
+      max-width: 100%;
+      border-radius: 20px;
+      box-shadow: 0 4px 20px rgba(0,0,0,0.1);
+    }
+    section {
+      padding: 80px 8%;
+      text-align: center;
+      background: #ffffff;
+    }
+    section h2 {
+      font-size: 36px;
+      color: #2e7d32;
+      margin-bottom: 40px;
+    }
+    .services {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 30px;
+    }
+    .service-card {
+      background: #f8fff8;
+      border-radius: 16px;
+      box-shadow: 0 4px 20px rgba(0,0,0,0.05);
+      padding: 30px;
+      max-width: 320px;
+      transition: transform 0.3s ease;
+    }
+    .service-card:hover { transform: translateY(-10px); }
+    .service-card img {
+      width: 100%;
+      border-radius: 10px;
+      margin-bottom: 20px;
+    }
+    footer {
+      background: #2e7d32;
+      color: white;
+      text-align: center;
+      padding: 30px 0;
+    }
+    .whatsapp {
+      position: fixed;
+      bottom: 25px;
+      right: 25px;
+      background: #25d366;
+      color: white;
+      border-radius: 50%;
+      padding: 18px;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.2);
+      transition: transform 0.3s ease;
+      z-index: 20;
+    }
+    .whatsapp:hover { transform: scale(1.1); }
+    .whatsapp svg { width: 28px; height: 28px; }
+  </style>
+</head>
+<body>
+  <header>
+    <img src="logo.jpg" alt="BR FARM Logo">
+    <nav>
+      <a href="#home">Beranda</a>
+      <a href="#layanan">Layanan</a>
+      <a href="#kontak">Kontak</a>
+    </nav>
+  </header>
+
+  <section class="hero" id="home">
+    <div class="hero-text">
+      <h1>BR FARM</h1>
+      <p>Transformasi Pertanian Menuju Era Digital. Kami menghadirkan solusi pertanian modern berbasis teknologi, drone, dan pupuk organik inovatif.</p>
+      <a href="https://wa.me/6281236261961" target="_blank">Hubungi Kami di WhatsApp</a>
+    </div>
+    <img src="drone.jpg" alt="Kegiatan BR FARM">
+  </section>
+
+  <section id="layanan">
+    <h2>Layanan Kami</h2>
+    <div class="services">
+      <div class="service-card">
+        <img src="pupuk.jpg" alt="Pupuk Organik">
+        <h3>Pupuk Organik Cair POC 3G</h3>
+        <p>Pupuk organik inovatif untuk meningkatkan hasil panen dan menjaga kesuburan tanah secara alami.</p>
+      </div>
+      <div class="service-card">
+        <img src="drone.jpg" alt="Drone Pertanian">
+        <h3>Teknologi Drone Pertanian</h3>
+        <p>Penyemprotan dan pemantauan lahan secara efisien dengan drone pertanian modern.</p>
+      </div>
+      <div class="service-card">
+        <img src="logo.jpg" alt="Digital Farming">
+        <h3>Digital Farming Solutions</h3>
+        <p>Mendukung petani dengan data dan teknologi untuk pertanian yang lebih cerdas dan produktif.</p>
+      </div>
+    </div>
+  </section>
+
+  <footer id="kontak">
+    <p>© 2025 BR FARM | Pertanian Digital Indonesia</p>
+    <p>Hubungi kami: <a href="mailto:info@brfarm.id" style="color:#c8e6c9;">info@brfarm.id</a></p>
+  </footer>
+
+  <a href="https://wa.me/6281236261961" class="whatsapp" target="_blank" aria-label="Chat on WhatsApp">
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32"><path fill="white" d="M16 .5C7.4.5.5 7.4.5 16c0 2.8.7 5.4 2 7.7L.5 31.5l8-2c2.2 1.2 4.7 1.8 7.5 1.8 8.6 0 15.5-6.9 15.5-15.5S24.6.5 16 .5z"/></svg>
+  </a>
+</body>
+</html>
